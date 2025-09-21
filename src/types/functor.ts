@@ -7,7 +7,7 @@ export interface Functor2<F extends Brand2> {
   fmap: <A, B, C>(f: (_: A) => B, a: Apply2<F, C, A>) => Apply2<F, C, B>;
 }
 
-interface Functor_ {
+export interface Functor_ {
   fmap: <A, B>(f: (_: A) => B, a: unknown) => unknown;
 }
 
